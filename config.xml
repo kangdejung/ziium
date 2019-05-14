@@ -10,13 +10,22 @@
 	<preference name="AutoHideSplashScreen" value="false" />
 	<preference name="SplashScreenDelay" value="10000" />
 	<preference name="android-minSdkVersion" value="15" />
+	<preference name="android-targetSdkVersion" value="26" />
 	<preference name="fullscreen" value="true" />
 
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
 	<gap:plugin name="cordova-plugin-inappbrowser" source="npm"  />
+
+	 <gap:plugin name="cordova-plugin-camera" source="npm" />
+	 <gap:plugin name="cordova-plugin-media-capture" source="npm" />
+	 <gap:plugin name="cordova-plugin-device" source="npm" />
+	 <gap:plugin name="cordova-plugin-media" source="npm" />
+	 <gap:plugin name="cordova-plugin-file" source="npm" />
 	
 	<allow-navigation href="*" />
 	<icon src="icon.png" />
 	<content src="index.html" />
 	<access origin="*" />
+	<allow-intent href="sms:*" />
+	<allow-intent href="tel:*" />
 </widget>
